@@ -11,9 +11,9 @@ class Cita(models.Model):
     fecha_aceptado = models.DateField(auto_now_add = False, null = True, blank = True)
 
     def __str__(self) -> str:
-        return self.nombre
+        return (self.nombre + " " + self.apellido)
     
     class Meta:
-        ordering = ['-sent_date']
+        ordering = ['-fecha_solicitud']
 
 # Create your models here.

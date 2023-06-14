@@ -31,7 +31,12 @@
     <nav class ="navbar navbar-light navbar-expand-md">
         
         <div class="container">
-            <a class="navbar-brand" href="{% url 'index' %}">Dr. Angel Villegas</a>
+            
+            <div class="logo-container" onclick="window.location.href = '{% url 'index' %}'">
+                <img class="logo" src="{% static 'img/logo.png' %}">
+                <a class="navbar-brand">Dr. Angel Villegas</a>
+            </div>
+
             <button 
                 class = "navbar-toggler"
                 type = "button"
@@ -59,12 +64,12 @@
                         <a class="nav-link active" href="#reviews">TESTIMONIOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#contact">CONTACTO</a>
+                        <a id="agendar-cita" class="nav-link active" href="#contact">¡Agenda una Cita!</a>
                     </li>
 
                     {% if request.user.is_authenticated %}
                     <li class="nav-item">
-                      <a class="nav-link active" href="#">ADMINISTRAR</a>
+                      <a class="nav-link active" href="#">X</a>
                   </li>
                   {% endif %}
                 </ul>

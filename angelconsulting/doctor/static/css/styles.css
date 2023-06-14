@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
 /*############ HEADER ##############*/
 
 .header {
@@ -7,6 +9,7 @@
    url("../img/header.png") 
    no-repeat center;
   background-size: cover;
+  background-position: center top 60px; /* Adjust the offset value as needed */
   min-height: 1000px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -24,10 +27,18 @@
   border-radius:0;
   box-shadow:none;
   border:none;
+  background-color:white;
 }
 
-.navbar{
-  background-color:white;
+
+.logo{
+  max-width:32px;
+  max-height:32px;
+  margin-right: 6px;
+}
+
+.logo-container:hover{
+  cursor: pointer;
 }
 
 /*Had to achieve ms-auto's effect through css.*/
@@ -38,15 +49,23 @@
   margin-left: auto;
 }
 
+/*Container expansion*/
+@media (min-width: 1200px){
+.container {
+  max-width: 1404px;
+}
+}
+
   @media (min-width:768px) {
     .header .navbar {
-      padding-top:1rem;
-      padding-bottom:1rem;
+      padding-top:0.7rem;
+      padding-bottom:0.7rem;
     }
   }
   
   .header .navbar .navbar-brand {
     font-weight:bold;
+    color: black;
   }
 
   
@@ -231,4 +250,46 @@
     transform:rotate(-19deg);
     opacity:0.2;
   }
+
+  @media (min-width: 1200px){
+  .offset-xl-1 {
+    margin-left: 4%;
+  }
+}
   
+.nav-item{
+  font-weight: 400;
+  padding:2px;
+}
+
+
+/*Hover effect */
+li.nav-item:hover{
+  background: #2c28fa;
+  color: #ffffff;
+  -webkit-transition: all .3s;
+  transition: all .3s;}
+
+#agendar-cita{
+  background: linear-gradient(45deg, #6257f8, #2c28fa);
+  color:white;
+  }
+
+/*Nav-Item Text*/
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show > .nav-link {
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 800;
+  font-size: 14.8px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-light .navbar-nav .active > .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active:hover,
+.navbar-light .navbar-nav .nav-link.show:hover,
+.navbar-light .navbar-nav .show > .nav-link:hover {
+  color: #ffffff;
+}
+

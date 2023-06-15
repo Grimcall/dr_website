@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 
 /*############ HEADER ##############*/
 
@@ -6,17 +6,17 @@
   background: linear-gradient(
    rgba(134, 192, 250, 0.5),
    rgba(0, 89, 253, 0.719)), 
-   url("../img/header.png") 
+   url("../img/header.jpg") 
    no-repeat center;
   background-size: cover;
-  background-position: center top 60px; /* Adjust the offset value as needed */
-  min-height: 1000px;
+  background-position: center top 40px right 60px; /* Adjust the offset value as needed */
+  min-height: 800px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 @media (min-width:768px) {
   .header {
-    padding-bottom:120px;
+    padding-bottom:60px;
   }
 }
 
@@ -283,8 +283,8 @@ li.nav-item:hover{
   color: rgba(0, 0, 0, 0.9);
   font-weight: 800;
   font-size: 14.8px;
-  font-family: 'Montserrat', sans-serif;
-}
+  font-family: 'Source Sans Pro', sans-serif;
+  }
 
 .navbar-light .navbar-nav .active > .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active:hover,
@@ -293,3 +293,63 @@ li.nav-item:hover{
   color: #ffffff;
 }
 
+/*ABOUT-ME */
+h1.display-4 {
+  margin-bottom: 40px;
+}
+
+p.lead{
+  padding: 45px;  
+}
+
+img.img-fluid{
+  border-radius: 50%;
+}
+.about-images-border-outer {
+  background: transparent;
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid rgb(0, 26, 255);
+  border-radius: 50%;
+}
+
+
+.about-images-border-inner {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  border: 1px solid rgb(255 0 0);
+  border-radius: 50%;
+}
+
+.about-images-circle-1 {
+  background: #FDCF2F;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-top: 83px;
+  border-radius: 50%;
+}
+
+.about-images-circle-2 {
+  background: #E91E63;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin-top: 91px;
+  margin-left: 381px;
+  border-radius: 50%;
+}
+
+.about-images-circle-3 {
+  background: #6f64e7;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  margin-top: 316px;
+  margin-left: 0;
+  border-radius: 50%;
+}

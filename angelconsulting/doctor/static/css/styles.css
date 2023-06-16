@@ -416,3 +416,117 @@ p.overview{
   margin-top: 0.7rem;
   padding: 0 100px;
 }
+
+/* Customize the navigation arrows */
+#reviews {
+  background-image: url('../img/review-bg.png');
+  background-color:white;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.219);
+  padding: 20px 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+  left: 20px;
+}
+
+.owl-carousel .owl-nav .owl-next {
+  right: 20px;
+}
+
+.owl-carousel .owl-nav .owl-prev:focus,
+.owl-carousel .owl-nav .owl-next:focus {
+  outline: none;
+}
+
+.owl-carousel .owl-nav .owl-prev:hover,
+.owl-carousel .owl-nav .owl-next:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+
+.owl-carousel .owl-nav button.owl-next, 
+.owl-carousel .owl-nav button.owl-prev, 
+.owl-carousel button.owl-dot{
+  width: 60px;
+  height: 60px;
+  font-size: 50px;
+}
+
+/*Contact */
+#contact {
+  background-image: linear-gradient(to left,
+   rgba(37, 92, 253, 0.459),
+   rgba(59, 70, 236,0.459),
+   rgba(64, 73, 202, 0.459),
+   rgba(43, 31, 95, 0.459),
+   rgba(86, 0, 139, 0.459)), 
+    url('../img/contact-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+
+.m-4 {
+  margin: 1.5rem 0 !important;
+}
+
+.contact-box-title h3{
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  margin: 0;
+}
+
+
+.form-main{
+  background: rgb(0 0 0 / 0.3);
+  padding: 50px 15px;
+}
+
+input.form-control{
+  border-radius: 0;
+  height: 52px;
+  border:none;
+}
+
+.form-group textarea {
+  height: auto;
+  max-height: 300px;
+  max-width: 100%;
+}
+
+div.form-group {
+  margin-bottom: 28px;
+}
+
+span.input-group-text{
+  font-size: 1.4rem;
+  background-color: #fff;
+}

@@ -166,9 +166,7 @@
               San Francisco, CA 94107<br>
             </address>
             </div>
-          </div><!-- end col -->
-  
-  
+          </div><!-- end col -->  
   
         </div>
         <!-- end row -->
@@ -182,35 +180,77 @@
           </div><!-- end col -->
   
           <!-- Contact form -->
-          <div class="col-sm-6">
+          <div class="col-lg-6">
+
+            <div class="contact-box-title">
+              <h3>Agenda Una Cita</h3>
+            </div>
+
             <form role="form" name="ajax-form" id="ajax-form" method="post" class="form-main" action="{% url 'index' %}">
-            {% csrf_token %}
-              <div class="form-group">
-                <label for="name2">Name</label>
-                <input class="form-control" id="name2" name="name" type="text" placeholder="name">
-                <div class="error" id="err-name" style="display: none;">Please enter name</div>
-              </div> <!-- /Form-name -->
-  
-              <div class="form-group">
-                <label for="email2">Email</label>
-                <input class="form-control" id="email2" name="email" type="text" placeholder="email">
-                <div class="error" id="err-emailvld" style="display: none;">E-mail is not a valid format</div> 
-              </div> <!-- /Form-email -->
-  
-              <div class="form-group">
-                <label for="message2">Message</label>
-                <textarea class="form-control" id="message2" name="message" rows="5" placeholder="message">Message</textarea>
-  
-                <div class="error" id="err-message" style="display: none;">Please enter message</div>
-              </div> <!-- /col -->
-  
-              <div class="row">            
-                  <button type="submit" class="btn btn-primary btn-shadow btn-rounded w-md" id="send">Send</button>
-                </div> <!-- /col -->
+              {% csrf_token %}
+              <div class="row">
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input class="form-control" id="name2" name="name" type="text" placeholder="Nombre y Apellido*">
+                      <div class="input-group-append">
+                        <span class="input-group-text"><i class="fa fa-user"></i></span>
+                      </div>
+                    </div>
+                    <div class="error" id="err-name" style="display: none;">Please enter name</div>
+                  </div>
+                </div>                
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input class="form-control" id="email2" name="email" type="text" placeholder="Correo Electrónico*">
+                      <div class="input-group-append">
+                        <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                      </div>
+                    </div>
+                    <div class="error" id="err-emailvld" style="display: none;">E-mail is not a valid format</div> 
+                  </div>
+                </div>
+
               </div> <!-- /row -->
-  
+              
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <div class="input-group">
+                    <input class="form-control" id="phone" name="phone" type="text" placeholder="Número Telefónico*">
+                    <div class="input-group-append">
+                      <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <div class="input-group">
+                    <input class="form-control" id="id" name="id" type="text" placeholder="SSN">
+                    <div class="input-group-append">
+                      <span class="input-group-text"><i class="fa fa-id-card"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div> <!-- /row -->
+              
+              <div class="form-group">
+                <textarea class="form-control" id="message2" name="message" rows="5" placeholder="¿Cómo te puedo ayudar?"></textarea>
+                <div class="error" id="err-message" style="display: none;">Please enter a message</div>
+              </div> <!-- /form-group -->
+          
+              <button type="submit" class="btn btn-primary btn-shadow btn-rounded w-md" id="send">Send</button>
+          
             </form> <!-- /form -->
-          </div> <!-- end col -->
+          </div> <!-- /col-lg-6 -->
+          
   
         </div> <!-- end row -->
             
